@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
-import AnimeSearch  from './components/pages/AnimeSearch'
+import AnimesSearch  from './components/pages/AnimesSearch'
 import AnimeMain  from './components/pages/AnimeMain'
 
 
@@ -11,7 +11,7 @@ function App() {
         <NavLink to="/">Home</NavLink>
       </div>
       <Route path="/" exact>
-        <AnimeSearch/>
+        <AnimesSearch/>
       </Route>
       <Route path="/anime/:id">
         <AnimeMain />
