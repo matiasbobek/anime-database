@@ -6,4 +6,10 @@ async function getAnimesFromAPI (searchValue){
     return animesJSON;
 }
 
+export async function getAnimeFromAPI (id){
+    const animeData = await fetch(`${BASE_URL}/anime/223`)
+    const animeJSON = await (animeData.json());
+    return animeJSON;
+}
+
 export default getAnimesFromAPI;

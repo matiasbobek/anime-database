@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-function useFetch(getAnimesFromAPI, searchValue){
+function useFetchAnimes(getAnimesFromAPI, searchValue){
 const [data, setData] = useState(null)
 
     useEffect(()=>{
@@ -18,4 +18,4 @@ const [data, setData] = useState(null)
     return data
 }
 
-export default useFetch
+export default useFetchAnimes;
