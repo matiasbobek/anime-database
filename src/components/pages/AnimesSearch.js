@@ -2,6 +2,7 @@ import { useState } from "react";
 import useFetchAnimes from "../services/useFetchAnimes";
 import getAnimesFromAPI from "../services/API"
 import AnimeCover from '../small/AnimeCover'
+import Loading from '../small/Loading'
 
 function AnimesSearch(){
     const [searchValue, setSearchValue] = useState(null);
@@ -12,7 +13,7 @@ function AnimesSearch(){
     <span>Search for an anime: </span>
     <input type="text" onChange={(e)=>setSearchValue(e.target.value)}/>
     {loading &&
-    <p> Loading...  </p>
+        <Loading/>
     }
     <ul>
     {data ? (
