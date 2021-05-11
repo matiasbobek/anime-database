@@ -11,6 +11,7 @@ function AnimeMain (){
     useEffect(()=>{
         async function fetchData(){
             setData(await resource);
+
         }
         fetchData();
     },[resource])

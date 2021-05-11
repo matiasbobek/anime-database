@@ -5,16 +5,17 @@ import AnimeCover from '../small/AnimeCover'
 
 function AnimesSearch(){
     const [searchValue, setSearchValue] = useState(null);
-    const data = useFetchAnimes(getAnimesFromAPI, searchValue);
-    const [loading, setLoading] = useState(false)
+    const {data, loading} = useFetchAnimes(getAnimesFromAPI, searchValue);
 
     return (
     <>
     <span>Search for an anime: </span>
     <input type="text" onChange={(e)=>setSearchValue(e.target.value)}/>
-    <p>{searchValue}</p>
+    {loading &&
+    <p> Loading...  </p>
+    }
     <ul>
-    {data && (
+    {data ? (
         data.results.map((result)=>(
             <AnimeCover
                 key={result.title}
@@ -23,7 +24,7 @@ function AnimesSearch(){
                 id={result.mal_id}
             />
         ))
-    )}    
+    ):""}    
     </ul>
     </>)
 }
