@@ -1,18 +1,31 @@
-import { useEffect, useState } from "react"
+import { useEffect, useReducer } from "react"
+
+const initialState = {data:null, loading: false}
+
+const fetchReducer = (state, action) => {
+    const {type, payload} = action;
+
+    switch(type){
+        case ("Loading"):
+            return ({...state, data:null, loading:true})
+        case ("Success"):
+            return({...state, data:payload, loading:false})
+        default: 
+            return state;
+    } 
+
+}
 
 function useFetchAnimes(getAnimesFromAPI, searchValue){
-const [data, setData] = useState(null)
-const [loading, setLoading] = useState(false)
-
+    const [state, dispatch] = useReducer(fetchReducer, initialState);
+    
     useEffect(()=>{
         if(searchValue){
             const timeOut = setTimeout(async ()=>{
-                setLoading(true);
-                setData(null)
+                dispatch({type: "Loading"});
                 try{
                     const resource = await getAnimesFromAPI(searchValue);
-                    setData(resource);
-                    setLoading(false);
+                    dispatch({type: "Success", payload:resource})
                 }catch(error){
                     console.error(error)
                 }
@@ -24,7 +37,8 @@ const [loading, setLoading] = useState(false)
         }
     }, [getAnimesFromAPI, searchValue])
 
-    return { data, loading}
-}
+    return state
+    }
+
 
 export default useFetchAnimes;
