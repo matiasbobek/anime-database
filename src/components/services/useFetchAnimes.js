@@ -6,8 +6,13 @@ const [data, setData] = useState(null)
     useEffect(()=>{
         if(searchValue){
             const timeOut = setTimeout(async ()=>{
-                const resource = await getAnimesFromAPI(searchValue);
-                setData(resource);
+                try{
+                    const resource = await getAnimesFromAPI(searchValue);
+                    setData(resource);
+                }catch(error){
+                    console.error(error)
+                }
+
             }, 500)
             return()=>{
                 clearTimeout(timeOut);

@@ -5,10 +5,12 @@ function useFetchAnime(getAnimeFromAPI, id){
    const [data, setData] = useState(null);
 
    useEffect(()=> {
-    async function fetchData(){
-     setData(await getAnimeFromAPI(id))
-    }
-    fetchData();
+       try{
+        setData(getAnimeFromAPI(id))
+       }
+       catch(error){
+        console.error(error)
+       }
    }, [getAnimeFromAPI, id])
 
     return data

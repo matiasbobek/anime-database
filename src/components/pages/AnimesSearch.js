@@ -6,6 +6,7 @@ import AnimeCover from '../small/AnimeCover'
 function AnimesSearch(){
     const [searchValue, setSearchValue] = useState(null);
     const data = useFetchAnimes(getAnimesFromAPI, searchValue);
+    const [loading, setLoading] = useState(false)
 
     return (
     <>
