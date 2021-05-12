@@ -1,16 +1,17 @@
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import AnimesSearch  from './components/pages/AnimesSearch'
 import AnimeMain  from './components/pages/AnimeMain'
+import './App.css'
 
 
 function App() {
   return (
-    <div className="container"> 
+    <div className="container" id="main-container"> 
     <Router>
-      <nav class="navbar is-primary" role="navigation" aria-label="main navigation"> 
-        <div id="navbarBasicExample" class="navbar-menu">
+      <nav className="navbar is-black" id="navbar" role="navigation" aria-label="main navigation"> 
+        <div class="navbar-menu">
           <div class="navbar-start">
-            <NavLink className="navbar-item" to="/">Home</NavLink>
+            <NavLink className="navbar-item" id="nav-link" to="/">Home</NavLink>
           </div>
         </div>
       </nav>

@@ -1,0 +1,25 @@
+
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+
+#navbar{
+    background-image: url("navbar.jpg");
+    height: 10em;
+}
+
+#main-container{
+    width: 75em;
+}
+
+#nav-link{
+    background-color: white;
+    text-align: center;
+    opacity: 65%;
+    color:black;
+    font-size: 25px;
+}
+
+#nav-link:hover{
+    opacity: 90%;
+}
