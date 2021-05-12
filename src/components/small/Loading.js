@@ -11,8 +11,8 @@ const spin = keyframes`
 `;
 
 const Loading = styled.div`
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
   border: 1em solid black;
   border-radius: 50%;
   color: black;

@@ -14,9 +14,11 @@ function AnimesSearch(){
         <div id="container-input" className="columns is-mobile is-centered">
             <input className="input is-normal" id="search-input" type="text" placeholder="Look for an anime" onChange={(e)=>setSearchValue(e.target.value)}/>
         </div>
-    {loading &&
-        <Loading/>
-    }
+        <div className="columns is-mobile is-centered" id="container-loading">
+            {loading &&
+                <Loading/>
+            }
+        </div>
     <div className="container" id="container-covers">
     {data ? (
         data.results.map((result)=>(
