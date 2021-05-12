@@ -25,7 +25,12 @@ function useFetchAnimes(getAnimesFromAPI, searchValue){
                 dispatch({type: "Loading"});
                 try{
                     const resource = await getAnimesFromAPI(searchValue);
-                    dispatch({type: "Success", payload:resource})
+                    console.log(resource.status)
+                    if(resource.status!==404){
+                        dispatch({type: "Success", payload:resource})
+                    } else{
+                        dispatch({type: "Success", payload:null})
+                    }
                 }catch(error){
                     console.error(error)
                 }
