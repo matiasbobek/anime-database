@@ -1,3 +1,21 @@
 #animes-search{
-    margin-top: 40px;
+    margin-top: 60px;
+}
+
+#search-input{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30%;
+    font:black;
+}
+
+#search-input::placeholder {
+    color: black;
+    opacity: 80%;
+  }
+
+#container-covers{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:40px;
 }

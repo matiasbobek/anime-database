@@ -11,14 +11,13 @@ function AnimesSearch(){
 
     return (
     <div id="animes-search">
-        <div id="container-input">
-            <span>Search for an anime: </span>
-            <input type="text" onChange={(e)=>setSearchValue(e.target.value)}/>
+        <div id="container-input" className="columns is-mobile is-centered">
+            <input className="input is-normal" id="search-input" type="text" placeholder="Look for an anime" onChange={(e)=>setSearchValue(e.target.value)}/>
         </div>
     {loading &&
         <Loading/>
     }
-    <ul>
+    <div className="container" id="container-covers">
     {data ? (
         data.results.map((result)=>(
             <AnimeCover
@@ -29,7 +28,7 @@ function AnimesSearch(){
             />
         ))
     ):""}    
-    </ul>
+    </div>
     </div>)
 }
 

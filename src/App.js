@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container" id="main-container"> 
     <Router>
-      <nav className="navbar is-black" id="navbar" role="navigation" aria-label="main navigation"> 
+      <nav className="navbar" id="navbar" role="navigation" aria-label="main navigation"> 
         <div class="navbar-menu">
           <div class="navbar-start">
             <NavLink className="navbar-item" id="nav-link" to="/">Home</NavLink>

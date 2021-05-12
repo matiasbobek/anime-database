@@ -1,0 +1,17 @@
+#container-cover{
+    margin-left: 15px;
+    width: 200px;
+    font:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#image-cover{
+    height: 300px;
+    width: 200px;
+}
+
+
+a{
+    color: black;
+}
