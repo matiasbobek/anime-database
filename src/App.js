@@ -8,11 +8,9 @@ function App() {
   return (
     <div className="container" id="main-container"> 
     <Router forceRefresh>
-      <nav className="navbar" id="navbar" role="navigation" aria-label="main navigation"> 
-        <div className="navbar-menu">
+      <div id="navbar"> 
             <NavLink  className="navbar-item" id="nav-link" to="/">Home</NavLink>
-        </div>
-      </nav>
+      </div>
       <Route path="/" exact>
         <AnimesSearch />
       </Route>

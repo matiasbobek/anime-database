@@ -6,9 +6,8 @@ body{
 #navbar{
     background-image: url("navbar.jpg");
     height: 10em;
+
 }
-
-
 
 #nav-link{
     background-color: white;
@@ -16,9 +15,15 @@ body{
     opacity: 65%;
     color:black;
     font-size: 25px;
-    position: fixed;
+    height: 7em;
+    width: 4em;
+    justify-content: space-around;
 }
 
 #nav-link:hover{
     opacity: 90%;
+}
+
+#main-container{
+    width: 75em;
 }
