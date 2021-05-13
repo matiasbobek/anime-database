@@ -8,9 +8,7 @@ body{
     height: 10em;
 }
 
-#main-container{
-    width: 75em;
-}
+
 
 #nav-link{
     background-color: white;
@@ -18,6 +16,7 @@ body{
     opacity: 65%;
     color:black;
     font-size: 25px;
+    position: fixed;
 }
 
 #nav-link:hover{

@@ -7,12 +7,10 @@ function App() {
 
   return (
     <div className="container" id="main-container"> 
-    <Router>
+    <Router forceRefresh>
       <nav className="navbar" id="navbar" role="navigation" aria-label="main navigation"> 
-        <div class="navbar-menu">
-          <div class="navbar-start">
-            <NavLink forceRefresh className="navbar-item" id="nav-link" to="/">Home</NavLink>
-          </div>
+        <div className="navbar-menu">
+            <NavLink  className="navbar-item" id="nav-link" to="/">Home</NavLink>
         </div>
       </nav>
       <Route path="/" exact>

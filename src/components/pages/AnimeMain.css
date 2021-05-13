@@ -1,0 +1,23 @@
+#anime-search{
+margin-top: 50px;
+}
+
+p{
+text-align: justify;
+}
+
+#column-1{
+    margin-left: 30px;
+}
+#column-2{
+    margin-left:-70px;
+    margin-right: 25px;
+}
+
+#main-title{
+text-align: center;
+}
+
+#trailer{
+float: right;
+}
