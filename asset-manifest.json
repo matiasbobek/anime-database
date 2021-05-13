@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/anime-database/static/css/main.0cde74e8.chunk.css",
+    "main.js": "/anime-database/static/js/main.3b4b6b9c.chunk.js",
+    "main.js.map": "/anime-database/static/js/main.3b4b6b9c.chunk.js.map",
+    "runtime-main.js": "/anime-database/static/js/runtime-main.2648b60f.js",
+    "runtime-main.js.map": "/anime-database/static/js/runtime-main.2648b60f.js.map",
+    "static/js/2.5b366741.chunk.js": "/anime-database/static/js/2.5b366741.chunk.js",
+    "static/js/2.5b366741.chunk.js.map": "/anime-database/static/js/2.5b366741.chunk.js.map",
+    "static/js/3.ecfb0583.chunk.js": "/anime-database/static/js/3.ecfb0583.chunk.js",
+    "static/js/3.ecfb0583.chunk.js.map": "/anime-database/static/js/3.ecfb0583.chunk.js.map",
+    "index.html": "/anime-database/index.html",
+    "static/css/main.0cde74e8.chunk.css.map": "/anime-database/static/css/main.0cde74e8.chunk.css.map",
+    "static/js/2.5b366741.chunk.js.LICENSE.txt": "/anime-database/static/js/2.5b366741.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/anime-database/static/media/navbar.77dd9894.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2648b60f.js",
+    "static/js/2.5b366741.chunk.js",
+    "static/css/main.0cde74e8.chunk.css",
+    "static/js/main.3b4b6b9c.chunk.js"
+  ]
+}
